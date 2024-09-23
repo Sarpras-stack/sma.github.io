@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    text-transform: uppercase;
+    color: aliceblue;
+    background-color: green;
+    text-align: center;
+    padding: 15px 40px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+label i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+label:active {
+    transform: scale(0.95);
+    box-shadow: 4px 12px 20px rgba(0, 0, 0, 0.25); /* Slightly reduced shadow on active */
+}
